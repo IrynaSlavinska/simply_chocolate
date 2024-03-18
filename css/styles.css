@@ -64,11 +64,29 @@ a {
   color: var(--accent-color);
 }
 
+.container {
+  width: 100%;
+  max-width: 1166px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /** --------------------- HEADER --------------------- */
 .header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -77,6 +95,9 @@ a {
   line-height: 1.11;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .header-logo span {
@@ -84,6 +105,8 @@ a {
 }
 
 .header-menu {
+  display: flex;
+  gap: 24px;
 }
 
 .header-menu-item {
@@ -105,6 +128,9 @@ a {
 } */
 
 .header-soc {
+  display: flex;
+  gap: 18px;
+  margin-left: 90px;
 }
 .header-soc-item {
 }
@@ -113,14 +139,28 @@ a {
 
 /** --------------------- HERO --------------------- */
 .hero {
-  background-color: rgb(70, 50, 14);
+  padding-bottom: 72px;
+}
+
+.hero-container {
+  background-color: #ebb76a;
+  padding: 381px 40px 40px 40px;
+  border-radius: 30px;
 }
 
 .hero-title {
   font-size: 28px;
+  font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: var(--white-color);
+  max-width: 484px;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
 }
 
 .hero-button {
@@ -130,6 +170,14 @@ a {
   color: var(--white-color);
   background-color: var(--accent-color);
   border: none;
+  padding: 14px 40px;
+  border-radius: 100px;
+  margin-right: 14px;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hover-color);
+  color: var(--accent-color);
 }
 
 .hero-link {
@@ -137,6 +185,14 @@ a {
   font-size: 14px;
   line-height: 1.21;
   color: var(--white-color);
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid var(--white-color);
+}
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .hero-scroll-link {
@@ -145,17 +201,25 @@ a {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: var(--white-color);
+  margin-left: auto;
 }
 
 /** --------------------- BENEFITS --------------------- */
 .benefits {
   background-color: var(--violet-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .benefits-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .benefits-item {
+  width: calc((100% - 176px) / 3);
 }
 
 .benefits-subtitle {
@@ -163,6 +227,7 @@ a {
   font-size: 18px;
   line-height: 1.22;
   color: var(--white-color);
+  margin-bottom: 18px;
 }
 
 .benefits-text {
@@ -173,19 +238,48 @@ a {
 
 /** --------------------- PRODUCTS --------------------- */
 .products {
+  padding: 100px 0;
+}
+
+.products-title {
+  max-width: 411px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .products-text {
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .products-list {
+  display: flex;
+  gap: 19px;
 }
+
 .products-item {
+  width: calc((100% - 19px * 3) / 4);
+  border-radius: 15px;
+  padding: 28px 36px 28px 28px;
 }
+.products-item:first-child {
+  background-color: var(--accent-color);
+}
+.products-item:nth-child(even) {
+  background-color: var(--white-color);
+  border: 1px solid var(--accent-color);
+}
+.products-item:nth-child(3) {
+  background-color: var(--violet-color);
+  border: 1px solid var(--violet-color);
+}
+
 .products-image {
+  margin-bottom: 36px;
 }
 
 .products-subtitle {
@@ -198,42 +292,83 @@ a {
 .products-subtitle.light {
   color: var(--white-color);
 }
+
 .products-subtitle.dark {
   color: var(--black-color);
 }
 
 /** --------------------- MADE --------------------- */
 .made {
+  padding-bottom: 100px;
+}
+
+.made-title {
+  margin-bottom: 50px;
+}
+
+.made-wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .made-image {
+}
+
+.made-content {
+  padding: 32px;
+  background-color: var(--white-color);
+  border-radius: 15px;
+  border: 1px solid var(--accent-color);
 }
 
 .made-text {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  letter-spacing: 0;
+  margin-bottom: 28px;
+  max-width: 350px;
 }
 
 .made-list {
+  /* max-width: 452px; */
+  padding-left: 16px;
 }
 
 .made-item {
 }
 
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 .made-item-text {
   font-size: 14px;
   line-height: 1.29;
+  max-width: 410px;
 }
 
 /** --------------------- LOVED --------------------- */
 .loved {
+  padding-bottom: 100px;
+}
+
+.loved-title {
+  margin-bottom: 90px;
 }
 
 .loved-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 50px;
 }
 
 .loved-item {
+  width: calc((100% - 28px * 2) / 3);
+  background-color: var(--white-color);
+  border-radius: 15px;
+  padding: 56px 24px 24px 24px;
 }
 
 .loved-image {
@@ -244,6 +379,7 @@ a {
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .loved-feedback {
@@ -258,21 +394,47 @@ a {
   font-size: 18px;
   line-height: 1.22;
   color: var(--black-color);
+  padding: 14px 40px;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.loved-button:hover,
+.loved-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /** --------------------- FOOTER --------------------- */
 .footer {
   background-color: var(--violet-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 50px;
+  margin-bottom: 24px;
 }
 
 .footer-title {
   font-size: 28px;
   line-height: 1.21;
   color: var(--white-color);
+  max-width: 300px;
 }
 
 .footer-title span {
   color: var(--accent-color);
+}
+
+.footer-contacts-wrap {
 }
 
 .footer-text {
@@ -280,6 +442,7 @@ a {
   font-weight: 500;
   line-height: 1.29;
   color: var(--white-color);
+  margin-bottom: 14px;
 }
 
 .footer-address {
@@ -301,6 +464,8 @@ a {
 }
 
 .footer-menu {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-menu-item {
@@ -311,4 +476,9 @@ a {
   font-size: 14px;
   line-height: 1.14;
   color: var(--white-color);
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: var(--accent-color);
 }
