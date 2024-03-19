@@ -52,7 +52,11 @@
               target="_blank"
               rel="noopener noreferrer"
               class="header-soc-link"
-              >insta</a
+              >
+              <svg class="header-soc-icon" width="24" height="24">
+                <use href="./icons/icons.svg#icon-instagram"></use>
+              </svg>
+              </a
             >
           </li>
           <li class="header-soc-item">
@@ -62,7 +66,11 @@
               target="_blank"
               rel="noopener noreferrer"
               class="header-soc-link"
-              >twit</a
+              >  
+               <svg class="header-soc-icon" width="24" height="24">
+                <use href="./icons/icons.svg#icon-twitter"></use>
+              </svg>
+              </a
             >
           </li>
         </ul>
@@ -79,7 +87,11 @@
           <div class="hero-buttons">
             <button type="button" class="hero-button">Buy now</button>
             <a href="#how-made" class="hero-link">How it`s made</a>
-            <a href="" class="hero-scroll-link">scroll down</a>
+            <a href="#footer" class="hero-scroll-link">scroll down <span>
+              <svg class="hero-arrow-icon" width="16" height="16">
+                <use href="./icons/icons.svg#icon-arrow"></use>
+              </svg> 
+            </span></a>
           </div>
         </div>
       </section>
@@ -141,7 +153,16 @@
                 class="products-image"
               />
               <h3 class="products-subtitle light">Milk chocolate</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">Milk chocolate</p>
+                <ul class="cover-buttons-list">
+                  <li class="cover-buttons-item"><button type="button" class="cover-product-button">chocolate</button></li>
+                  <li  class="cover-buttons-item"><button type="button" class="cover-benefit-button">the benefits</button></li>
+                </ul>
+                <p class="products-cover-text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times.</p>            
+              </div>
             </li>
+
             <li class="products-item">
               <img
                 src="./images/milk.png"
@@ -151,7 +172,16 @@
                 class="products-image"
               />
               <h3 class="products-subtitle dark">Milk</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">Milk</p>
+                <ul class="cover-buttons-list">
+                  <li class="cover-buttons-item"><button type="button" class="cover-product-button">milk</button></li>
+                  <li  class="cover-buttons-item"><button type="button" class="cover-benefit-button">the benefits</button></li>
+                </ul>
+                <p class="products-cover-text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.</p>            
+              </div>
             </li>
+
             <li class="products-item">
               <img
                 src="./images/nuts.png"
@@ -161,7 +191,16 @@
                 class="products-image"
               />
               <h3 class="products-subtitle light">Nuts</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">Nuts</p>
+                <ul class="cover-buttons-list">
+                  <li class="cover-buttons-item"><button type="button" class="cover-product-button">nuts</button></li>
+                  <li  class="cover-buttons-item"><button type="button" class="cover-benefit-button">the benefits</button></li>
+                </ul>
+                <p class="products-cover-text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.</p>            
+              </div>
             </li>
+
             <li class="products-item">
               <img
                 src="./images/semi-sweet-chocolate.png"
@@ -171,6 +210,14 @@
                 class="products-image"
               />
               <h3 class="products-subtitle dark">Semi-sweet chocolate</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">Semi-sweet chocolate</p>
+                <ul class="cover-buttons-list">
+                  <li class="cover-buttons-item"><button type="button" class="cover-product-button">sweet chocolate</button></li>
+                  <li  class="cover-buttons-item"><button type="button" class="cover-benefit-button">the benefits</button></li>
+                </ul>
+                <p class="products-cover-text">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate.</p>            
+              </div>
             </li>
           </ul>
         </div>
@@ -234,13 +281,13 @@
          <h2 class="section-title loved-title"><span>Chocolate</span> is loved</h2>
         <ul class="loved-list">
           <li class="loved-item">
-            <!-- <img
+            <img
               src="./images/review-1.jpg"
               alt="Victoria Dobrzhanska photo"
               width="80"
               height="80"
               class="loved-image"
-            /> -->
+            />
             <h3 class="loved-name">Victoria Dobrzhanska</h3>
             <p class="loved-feedback">
               I love this chocolate bar. Perfect combination of light crispy
@@ -248,13 +295,13 @@
             </p>
           </li>
           <li class="loved-item">
-            <!-- <img
+            <img
               src="./images/review-2.jpg"
               alt="Nazar Babenko photo"
               width="80"
               height="80"
               class="loved-image"
-            /> -->
+            />
             <h3 class="loved-name">Nazar Babenko</h3>
             <p class="loved-feedback">
               This chocolate confection is a delight! A delight! The wafer is
@@ -263,13 +310,13 @@
             </p>
           </li>
           <li class="loved-item">
-            <!-- <img
+            <img
               src="./images/review-3.jpg"
               alt="Olena Kampusch photo"
               width="80"
               height="80"
               class="loved-image"
-            /> -->
+            />
             <h3 class="loved-name">Olena Kampusch</h3>
             <p class="loved-feedback">
               Chocolate is a family favourite treat. Love the delicious smooth
@@ -278,12 +325,12 @@
             </p>
           </li>
         </ul>
-        <button type="button" class="loved-button">Leave a review</button>
+        <button type="button" class="loved-button" data-modal-open>Leave a review</button>
       </section>
        </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
     <div class="container">
        <div class="footer-top">
          <p class="footer-title">
@@ -322,5 +369,17 @@
       </nav>
     </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="close-modal-button" data-modal-close>
+          <svg class="close-icon" width="28" height="28">
+            <use href="./icons/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
