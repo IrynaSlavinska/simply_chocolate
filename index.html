@@ -310,13 +310,42 @@
     </div>
   </footer>
 
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop" data-modal>
     <div class="modal">
       <button type="button" class="close-modal-button" data-modal-close>
         <svg class="close-icon" width="28" height="28">
-          <use href="./icons/icons.svg#icon-x-close"></use>
+          <use href="./icons/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <p class="modal-title section-title">Leave a review about <span>our chocolate</span></p>
+      <form class="modal-form">
+        <div class="modal-input-wrap">
+          <input type="text" name="user-name" placeholder="Name" required class="modal-input">
+          <svg class="input-icon" width="24" height="24">
+            <use href="./icons/icons.svg#icon-user"></use>
+          </svg>
+        </div>
+
+        <div class="modal-input-wrap">
+          <input type="email" name="user-email" placeholder="Email" class="modal-input">
+          <svg class="input-icon" width="24" height="24">
+            <use href="./icons/icons.svg#icon-mail"></use>
+          </svg>
+        </div>
+
+        <div class="modal-input-wrap">
+          <input type="tel" name="user-phone" placeholder="Phone number" required class="modal-input">
+          <svg class="input-icon" width="24" height="24">
+            <use href="./icons/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+
+        <div class="modal-input-wrap">
+          <textarea name="feedback" name="feedback" placeholder="Enter text" class="modal-textarea"></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
     </div>
   </div>
 
