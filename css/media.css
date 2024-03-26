@@ -1,0 +1,102 @@
+/* ======================= MEDIA ======================= */
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 366px;
+    }
+
+    .benefits-item {
+        max-width: 308px;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 734px;
+        /* ширина контенту + падінги 15рх*2 */
+    }
+
+    .section-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    .benefits {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .benefits-list {
+        gap: 32px;
+    }
+
+    .benefits-item {
+        max-width: unset;
+        width: calc((100% - 32px) / 2);
+    }
+
+    .products {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .products-title {
+        max-width: 411px;
+        margin-bottom: 28px;
+    }
+
+    .products-text {
+        margin-bottom: 50px;
+    }
+
+    .products-list {
+        gap: 32px;
+    }
+
+    .products-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+}
+
+@media screen and (min-width: 1166px) {
+    .container {
+        max-width: 1166px;
+    }
+
+
+    .benefits-list {
+        gap: 88px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .benefits-item {
+        width: calc((100% - 176px) / 3);
+    }
+
+    .benefits-item:not(:last-child):after {
+        position: absolute;
+        content: "";
+        display: block;
+        right: -18px;
+        top: 60px;
+        height: 124px;
+        width: 1px;
+        background-color: var(--white-color-transparent);
+    }
+
+    .products {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .products-list {
+        gap: 19px;
+    }
+
+    .products-item {
+        width: calc((100% - 19px * 3) / 4);
+    }
+}

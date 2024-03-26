@@ -55,9 +55,9 @@ a {
 }
 
 .section-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -69,6 +69,7 @@ a {
 
 .container {
   width: 100%;
+  max-width: 1166px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -80,6 +81,7 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -124,7 +126,7 @@ a {
   gap: 24px;
 }
 
-/* .header-menu-item {} */
+.header-menu-item {}
 
 .header-menu-link {
   font-weight: 500;
@@ -149,7 +151,7 @@ a {
   margin-left: 90px;
 }
 
-/* .header-soc-item {} */
+.header-soc-item {}
 
 .header-soc-icon {
   fill: var(--black-color);
@@ -277,18 +279,19 @@ a {
 /** --------------------- BENEFITS --------------------- */
 .benefits {
   background-color: var(--violet-color);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .benefits-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .benefits-item {
-  width: 100%;
+  width: calc((100% - 176px) / 3);
   position: relative;
 }
 
@@ -317,7 +320,13 @@ a {
 }
 
 .benefits-item:not(:last-child):after {
-  display: none;
+  position: absolute;
+  content: "";
+  right: -18px;
+  top: 60px;
+  height: 124px;
+  width: 1px;
+  background-color: var(--white-color-transparent);
 }
 
 .benefits-subtitle {
@@ -331,20 +340,18 @@ a {
 .benefits-text {
   font-size: 14px;
   line-height: 1.21;
-  letter-spacing: -0.02em;
   color: var(--white-color-transparent);
 }
 
 /** --------------------- PRODUCTS --------------------- */
 .products {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 100px 0;
 }
 
 .products-title {
-  max-width: 283px;
+  max-width: 411px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .products-text {
@@ -353,25 +360,20 @@ a {
   text-align: center;
   max-width: 486px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 }
 
 .products-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 19px;
 }
 
 .products-item {
-  width: 100%;
+  width: calc((100% - 19px * 3) / 4);
   border-radius: 15px;
   padding: 28px 36px 28px 28px;
   position: relative;
   overflow: hidden;
-}
-
-.products-item img {
-  margin: 0 auto;
 }
 
 .products-item:first-child {
