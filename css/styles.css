@@ -74,6 +74,20 @@ a {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /** --------------------- HEADER --------------------- */
 .header {
   padding-top: 24px;
@@ -774,4 +788,59 @@ a {
   color: #404040;
   outline: transparent;
   resize: none;
+}
+
+.check-text {
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.60);
+  display: flex;
+  align-items: center;
+}
+
+.check-text span {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  border-radius: 6px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color var(--animation-set), border-color var(--animation-set);
+}
+
+.check-text a {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+}
+
+.input-check:checked+.check-text span {
+  background-color: var(--accent-color);
+  border: none;
+  fill: var(--white-color);
+}
+
+.input-check:focus+.check-text span,
+.input-check:hover+.check-text span {
+  border-color: var(--accent-color);
+}
+
+.send-button {
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.21;
+  font-weight: 600;
+  border-radius: 100px;
+  background: #FD9222;
+  padding: 14px 40px;
+  transition: background-color var(--animation-set), color var(--animation-set);
+}
+
+.send-button:hover,
+.send-button:focus {
+  background-color: var(--hover-color);
+  color: var(--accent-color);
 }
