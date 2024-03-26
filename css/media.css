@@ -56,6 +56,28 @@
 
     .products-item {
         width: calc((100% - 32px) / 2);
+        padding: 32px;
+    }
+
+    .made {
+        padding-bottom: 80px;
+    }
+
+    .made>.container {
+        max-width: 644px;
+    }
+
+    .made-title {
+        margin-bottom: 50px;
+    }
+
+    .made-content {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .made-item-text {
+        max-width: 464px;
     }
 
 }
@@ -98,5 +120,22 @@
 
     .products-item {
         width: calc((100% - 19px * 3) / 4);
+    }
+
+    .made>.container {
+        max-width: 1166px;
+    }
+
+    .made-wrap {
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .made-content {
+        width: 516px;
+    }
+
+    .made-item:not(:last-child) {
+        margin-bottom: 24px;
     }
 }

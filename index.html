@@ -200,7 +200,21 @@
       <div class="container">
         <h2 class="section-title made-title">How it`s <span>made?</span></h2>
         <div class="made-wrap">
-          <img src="./images//image.jpg" alt="bowl with chocolate" width="600" height="400" class="made-image" />
+          <!-- <img src="./images//image.jpg" alt="bowl with chocolate" width="600" height="400" class="made-image" /> -->
+          <picture>
+            <source srcset="./images/made-mobile-1x.jpg 1x, ./images/made-mobile-2x.jpg 2x" media="(max-width:767.98px)"
+              type="image/png" />
+
+            <source srcset="./images/made-tablet-1x.jpg 1x, ./images/made-tablet-2x.jpg 2x"
+              media="(max-width:1199.98px)" type="image/png" />
+
+            <source srcset="./images/made-desktop-1x.jpg 1x, ./images/made-desktop-2x.jpg 2x" media="(min-width:1200px)"
+              type="image/png" />
+
+            <img src="./images/made-desktop-1x.jpg" alt="bowl with chocolate" width="600" height="400"
+              class="made-image" />
+          </picture>
+
           <div class="made-content">
             <p class="made-text">
               Try our chocolates today and discover the perfect balance of
