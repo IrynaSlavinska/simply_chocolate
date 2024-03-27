@@ -11,6 +11,8 @@
 
 }
 
+/* ======================= TABLET ======================= */
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 734px;
@@ -80,7 +82,29 @@
         max-width: 464px;
     }
 
+    .loved {
+        padding-bottom: 80px;
+    }
+
+    .loved-title {
+        margin-bottom: 90px;
+    }
+
+    .loved-list {
+        gap: 60px 16px;
+        margin-bottom: 50px;
+    }
+
+    .loved-item {
+        width: calc((100% - 16px) / 2);
+    }
+
+    .loved-button {
+        padding: 14px 40px;
+    }
 }
+
+/* ======================= DESKTOP ======================= */
 
 @media screen and (min-width: 1166px) {
     .container {
@@ -137,5 +161,17 @@
 
     .made-item:not(:last-child) {
         margin-bottom: 24px;
+    }
+
+    .loved {
+        padding-bottom: 100px;
+    }
+
+    .loved-list {
+        gap: 28PX;
+    }
+
+    .loved-item {
+        width: calc((100% - 28px * 2) / 3);
     }
 }
