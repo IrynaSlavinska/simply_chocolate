@@ -154,6 +154,26 @@
         width: 22px;
         height: 22px;
     }
+
+    .header-logo {
+        font-size: 18px;
+    }
+
+    .header-menu {
+        display: flex;
+        gap: 24px;
+    }
+
+    .header-soc {
+        display: flex;
+        gap: 18px;
+        margin-left: 48px;
+    }
+
+    .open-menu-button {
+        display: none;
+    }
+
 }
 
 /* ======================= DESKTOP ======================= */
@@ -244,5 +264,9 @@
                     rgba(17, 17, 17, 0.4) 100%),
                 url(../images/hero/hero-desktop-2x.jpg);
         }
+    }
+
+    .header-soc {
+        margin-left: 90px;
     }
 }
