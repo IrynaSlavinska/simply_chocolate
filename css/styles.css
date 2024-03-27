@@ -138,15 +138,9 @@ a {
   color: var(--accent-color);
 }
 
-/* .header-menu-link:is(:hover, :focus) {
-  color: var(--accent-color);
-} */
-
 .header-soc {
   display: none;
 }
-
-/* .header-soc-item {} */
 
 .header-soc-icon {
   fill: var(--black-color);
@@ -159,10 +153,9 @@ a {
 }
 
 /** --------------------- BURGER MENU --------------------- */
-
 .mob-menu {
   position: fixed;
-  width: 50%;
+  width: 100%;
   height: 100%;
   top: 0;
   right: 0;
@@ -194,10 +187,6 @@ a {
   margin-bottom: 50px;
 }
 
-/* .mob-menu-item:not(:last-child) {
-  margin-bottom: 24px;
-} */
-
 .mob-menu-link {
   color: var(--white-color);
   font-size: 14px;
@@ -211,10 +200,6 @@ a {
   gap: 18px;
   justify-content: center;
 }
-
-.mob-soc-item {}
-
-.mob-soc-link {}
 
 .mob-soc-icon {
   fill: var(--white-color)
@@ -569,7 +554,6 @@ a {
 }
 
 .made-list {
-  /* max-width: 452px; */
   padding-left: 16px;
 }
 
@@ -615,7 +599,6 @@ a {
 }
 
 .loved-item {
-  /* width: calc((100% - 28px * 2) / 3); */
   width: 100%;
   background-color: var(--white-color);
   border-radius: 15px;
@@ -743,13 +726,11 @@ a {
 .subs-input {
   width: 207px;
   height: 45px;
-  /* height: 52px; */
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   background-color: transparent;
   color: var(--white-color);
   padding: 14px 18px;
-  /* padding: 14px 24px; */
   margin-right: 8px;
 }
 
@@ -797,11 +778,14 @@ a {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation-set);
-  width: 520px;
-  min-height: 694px;
+  width: 95%;
+  max-width: 311px;
+  height: 95%;
+  max-height: 535px;
   background-color: var(--bcg-body-color);
   border-radius: 15px;
-  padding: 40px;
+  padding: 32px 24px;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -810,10 +794,10 @@ a {
 
 .close-modal-button {
   position: absolute;
-  width: 28px;
-  height: 28px;
-  right: 24px;
-  top: 24px;
+  width: 24px;
+  height: 24px;
+  right: 14px;
+  top: 14px;
   border: none;
   background-color: transparent;
 }
@@ -821,6 +805,8 @@ a {
 .close-icon {
   stroke: var(--black-color);
   transition: stroke var(--animation-set);
+  width: 24px;
+  height: 24px;
 }
 
 .close-icon:hover,
@@ -835,24 +821,25 @@ a {
 }
 
 .modal-title {
+  font-size: 20px;
   text-align: left;
-  max-width: 298px;
-  margin-bottom: 40px;
+  max-width: 255px;
+  margin-bottom: 32px;
 }
 
 .modal-input-wrap {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .modal-input {
   width: 100%;
-  height: 68px;
+  height: 45px;
   border: 1.5px solid rgba(17, 17, 17, 0.2);
   border-radius: 13px;
   background-color: transparent;
-  padding-left: 62px;
-  padding-right: 24px;
+  padding-left: 50px;
+  padding-right: 18px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
   font-size: 18px;
   line-height: 1.22;
@@ -865,26 +852,20 @@ a {
 .modal-input::placeholder,
 .modal-textarea::placeholder {
   color: rgba(64, 64, 64, 0.30);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.22;
   letter-spacing: -0.02em;
 }
 
 .input-icon {
   position: absolute;
-  left: 24px;
+  left: 18px;
+  /* left: 24px; */
   top: 50%;
   transform: translateY(-50%);
   transition: stroke var(--animation-set);
   stroke: #404040;
 }
-
-/* .modal-input:valid {
-  background-color: green;
-}
-.modal-input:invalid {
-  background-color: red;
-} */
 
 .modal-input:focus {
   border-color: var(--accent-color);
@@ -895,12 +876,12 @@ a {
 }
 
 .modal-textarea {
-  height: 137px;
+  height: 92px;
   width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.2);
   border-radius: 13px;
   background-color: transparent;
-  padding: 22px 24px;
+  padding: 14px 18px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
   font-size: 18px;
   line-height: 1.22;
@@ -911,7 +892,7 @@ a {
 }
 
 .check-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.60);
@@ -926,6 +907,7 @@ a {
   border-radius: 6px;
   margin-right: 12px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -955,7 +937,7 @@ a {
   font-weight: 600;
   border-radius: 100px;
   background: #FD9222;
-  padding: 14px 40px;
+  padding: 12px 28px;
   transition: background-color var(--animation-set), color var(--animation-set);
 }
 

@@ -215,6 +215,64 @@
         padding: 14px 28px;
     }
 
+    .modal {
+        width: 100%;
+        max-width: 517px;
+        height: 100%;
+        max-height: 694px;
+        padding: 40px;
+        overflow: hidden;
+    }
+
+    .close-modal-button {
+        width: 28px;
+        height: 28px;
+        right: 24px;
+        top: 24px;
+    }
+
+    .close-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .modal-title {
+        font-size: 24px;
+        max-width: 298px;
+        margin-bottom: 40px;
+    }
+
+    .modal-input-wrap {
+        margin-bottom: 18px;
+    }
+
+    .modal-input {
+        height: 68px;
+        padding-left: 62px;
+        padding-right: 24px;
+    }
+
+    .modal-input::placeholder,
+    .modal-textarea::placeholder {
+        font-size: 18px;
+    }
+
+    .input-icon {
+        left: 24px;
+    }
+
+    .modal-textarea {
+        height: 137px;
+        padding: 22px 24px;
+    }
+
+    .check-text {
+        font-size: 14px;
+    }
+
+    .send-button {
+        padding: 14px 40px;
+    }
 }
 
 /* ======================= DESKTOP ======================= */
