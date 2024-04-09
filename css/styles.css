@@ -89,6 +89,20 @@ a {
   overflow: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--violet-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--white-color);
+  border-radius: 20px;
+  border: 2px solid var(--violet-color);
+}
+
 /** --------------------- HEADER --------------------- */
 .header {
   padding-top: 24px;
